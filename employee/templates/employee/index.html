@@ -11,6 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
    
 </head>  
+
 <body> 
   {% block content %} 
 <form method="POST"  action="{% url 'employee:emp' %}">  
@@ -20,29 +21,29 @@
     <div class="form-group row">  
     <label class="col-lg-1 col-form-label"></label>  
     <div class="col-lg-4">  
-    <h3>Enter Details</h3>  
+    <h3 style="color: red;">Enter Details</h3>  
     </div>  
   </div>  
     <div class="form-group row">  
-    <label class="col-lg-2 col-form-label">Employee Id:</label>  
+    <label class="col-lg-2 col-form-label" style="color: blue;">Employee Id:</label>  
     <div class="col-lg-4">  
       {{ form.eid }}  
     </div>  
   </div>  
   <div class="form-group row">  
-    <label class="col-lg-2 col-form-label">Employee Name:</label>  
+    <label class="col-lg-2 col-form-label" style="color: blue;">Employee Name:</label>  
     <div class="col-lg-4">  
       {{ form.ename }}  
     </div>  
   </div>  
     <div class="form-group row">  
-    <label class="col-lg-2 col-form-label">Employee Email:</label>  
+    <label class="col-lg-2 col-form-label" style="color: blue;">Employee Email:</label>  
     <div class="col-lg-4">  
       {{ form.eemail }}  
     </div>  
   </div>  
     <div class="form-group row">  
-    <label class="col-lg-2 col-form-label">Employee Contact:</label>  
+    <label class="col-lg-2 col-form-label" style="color: blue;">Employee Contact:</label>  
     <div class="col-lg-4">  
       {{ form.econtact }}  
     </div>  
